@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collapsible .content {
+    padding: 6px;
+    background-color: #eeeeee;
+}
+.collapsible .header {
+    background-color: #cccccc;
+    padding: 6px;
+    cursor: pointer;
+}
+.collapsible-arrows {
+    display: inline-flex;
+    height: 20px;
+}
+.collapsible-arrows > svg {
+    margin-left: 15px;
+}
+.collapsible-arrows > .item-name {
+    margin-left: 10px;
+}
