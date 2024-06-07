@@ -13,6 +13,7 @@ function FileAndFolderCreation({ show , handleClose, errors, fetchFolder, parent
         <CreateFolderForm
             errors={errors}
             parentId={parentId}
+            fetchFolderFun={fetchFolder}
         >
         </CreateFolderForm>
         <CreateFileForm

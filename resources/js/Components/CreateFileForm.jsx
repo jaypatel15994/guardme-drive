@@ -14,7 +14,7 @@ export default function CreateFileForm(props) {
     }
     
     const { setData, errors, post, progress } = useForm({
-        file: null,
+        file: '',
         folderId: props.folderId
     });
     return (

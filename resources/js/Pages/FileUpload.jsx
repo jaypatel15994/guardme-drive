@@ -59,7 +59,7 @@ export default function Dashboard(props) {
                             
                                 
                                 {
-                                    folders.length && folders.map((folder) => {
+                                    folders.length>0 && folders.map((folder) => {
                                         return (
                                             <Collapsible
                                             folderData = {folder} 
@@ -71,7 +71,7 @@ export default function Dashboard(props) {
                                     })
                                 }
                                 {
-                                    files.length && files.map((file) => {
+                                    files.length>0 && files.map((file) => {
                                         return (
                                             <div key={file.id}>{file.path}</div>
                                         )

@@ -6,6 +6,7 @@ export default function CreateFolderForm(props) {
         post(route("folder.upload.store"));
         document.querySelector("input[name='name']").value = "";
         setData("name", '');
+        props.fetchFolderFun(props.parentId);
     }
 
     const { setData, errors, post } = useForm({
